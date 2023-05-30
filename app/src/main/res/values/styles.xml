@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    Button style-->
+    <style name="Button" parent="Widget.Material3.Button">
+        <item name="textAllCaps">false</item>
+        <item name="cornerRadius">@dimen/corner_radius_small</item>
+        <item name="fontFamily">@font/spicy_rice</item>
+    </style>
+
+    <style name="ButtonBig" parent="Button">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:layout_margin">2.5dp</item>
+    </style>
+
+    <style name="ButtonSmall" parent="Button">
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:textSize">@dimen/text_xlarge</item>
+        <item name="android:layout_margin">@dimen/margin_small</item>
+    </style>
+
+
+<!--    Toolbar style-->
+    <style name="Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="android:paddingHorizontal">@dimen/padding_large</item>
+    </style>
+
+    <style name="Toolbar.Title">
+        <item name="titleTextAppearance">@style/ToolbarTitleText</item>
+    </style>
+
+    <style name="ToolbarTitleText"> <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/spicy_rice</item>
+        <item name="android:textSize">@dimen/text_xlarge</item>
+    </style>
+
+
+<!--    EditText Style-->
+    <style name="EditText" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/spicy_rice</item>
+    </style>
+
+    <style name="TitleEditText" parent="EditText">
+        <item name="android:textSize">@dimen/text_xlarge</item>
+        <item name="android:inputType">textAutoCorrect</item>
+    </style>
+
+    <style name="DescriptionEditText" parent="EditText">
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:inputType">textImeMultiLine</item>
+        <item name="android:isScrollContainer">true</item>
+        <item name="maxLines">10</item>
+        <item name="singleLine">false</item>
+    </style>
+
+
+<!--    Text style-->
+    <style name="Text" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/spicy_rice</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextTitle" parent="Text">
+        <item name="android:textSize">@dimen/text_xlarge</item>
+    </style>
+
+    <style name="TextDescription" parent="Text">
+        <item name="android:textSize">@dimen/text_large</item>
+    </style>
+</resources>

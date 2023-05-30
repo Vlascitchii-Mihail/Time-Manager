@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Biases-->
+    <dimen name="bias_small">0.3</dimen>
+
+    <!--Margins-->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+    <!-- Paddings-->
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_tiny">4dp</dimen>
+
+<!--    Text size-->
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_xlarge">24sp</dimen>
+
+<!--    View sizes-->
+    <dimen name="btn_height">70dp</dimen>
+
+    <!--Stroke-->
+    <dimen name="stroke_tiny">1dp</dimen>
+
+<!--    Radius-->
+    <dimen name="corner_radius_small">5dp</dimen>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/sevenDaysFragment">
+
+    <fragment
+        android:id="@+id/sevenDaysFragment"
+        android:name="com.vm.timemanager.fragments.SevenDaysFragment"
+        android:label="fragment_seven_days"
+        tools:layout="@layout/fragment_seven_days">
+
+        <action
+            android:id="@+id/action_sevenDaysFragment_to_daysFragment"
+            app:destination="@id/daysFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/daysFragment"
+        android:name="com.vm.timemanager.fragments.DaysFragmentList"
+        android:label="fragment_day"
+        tools:layout="@layout/fragment_days">
+
+        <argument
+            android:name="dayName"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/dayFragment_to_newTaskFragment"
+            app:destination="@id/newTaskAddingFragment"/>
+
+        <action
+            android:id="@+id/send_id_to_newTaskFragment"
+            app:destination="@+id/newTaskAddingFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/newTaskAddingFragment"
+        android:name="com.vm.timemanager.fragments.NewTaskAdding"
+        tools:layout="@layout/fragment_new_task_adding">
+
+        <argument
+            android:name="day"
+            app:argType="string" />
+
+        <argument
+            android:name="id"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/select_time"
+            app:destination="@id/timePickerFragment" />
+
+    </fragment>
+
+    <dialog
+        android:id="@+id/timePickerFragment"
+        android:name="com.vm.timemanager.fragments.TimePickerFragment"
+        android:label="TimePickerFragment" >
+
+        <argument
+            android:name="taskTime"
+            app:argType="java.time.LocalDateTime" />
+        <argument
+            android:name="timeType"
+            app:argType="string"/>
+
+    </dialog>
+
+
+</navigation>

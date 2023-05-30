@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="java.time.LocalDateTime" />
+        <import type="java.time.format.DateTimeFormatter" />
+
+        <variable
+            name="task"
+            type="com.vm.timemanager.data.Task" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:text="@{task.taskName + ' '}"
+            style="@style/TextTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Do id right now" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/task_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:text='@{"Start: " + task.startTime.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss"))}'
+            style="@style/TextDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/task_name"
+            tools:text="Start date: 01:12:22 -  End date: 02.12.22" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

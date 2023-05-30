@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Time Manager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="add_new_task">Add new task</string>
+    <string name="write_a_description_here">Write a description here</string>
+    <string name="write_a_task_name_here">Write a task name here</string>
+    <string name="add_task">Add a task</string>
+    <string name="add_new_task_floating_action_button">Add a new task floating action button</string>
+    <string name="set_start_date">Set start date</string>
+    <string name="set_end_date">Set end date</string>
+    <string name="start_time">Set start time</string>
+    <string name="end_time">Set end time</string>
+    <string name="save_the_task">Save the task</string>
+    <string name="delete">Delete</string>
+    <string name="notification_channel_name">ReminderNotification</string>
+    <string name="notification_channel_description">Used for enabling or disabling ReminderNotification</string>
+
+
+    <!--    <string name="navi_start_time">start time</string>-->
+
+</resources>
