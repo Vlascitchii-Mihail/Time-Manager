@@ -49,10 +49,11 @@
 
     <style name="DescriptionEditText" parent="EditText">
         <item name="android:textSize">@dimen/text_large</item>
-        <item name="android:inputType">textImeMultiLine</item>
+        <item name="android:inputType">textMultiLine</item>
         <item name="android:isScrollContainer">true</item>
-        <item name="maxLines">10</item>
+        <item name="android:maxLines">7</item>
         <item name="singleLine">false</item>
+        <item name="android:scrollbars">vertical</item>
     </style>
 
 

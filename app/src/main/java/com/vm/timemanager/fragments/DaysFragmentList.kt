@@ -58,7 +58,7 @@ class DaysFragmentList : Fragment() {
 
         //add a TaskList to the adapter if the LiveData allTask changes
         viewModel.allTasks.observe(viewLifecycleOwner, Observer { taskList ->
-            adapterDays.submitList(taskList)
+            adapterDays.submitList(taskList.sortedBy { it.startTime?.hour })
         })
 
         binding.newTaskFab.setOnClickListener {

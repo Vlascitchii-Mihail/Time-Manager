@@ -4,7 +4,6 @@ import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
-import android.widget.Toast
 import com.vm.timemanager.data.Task
 import java.time.ZoneId
 
@@ -28,7 +27,6 @@ class AlarmSchedulerImpl(private val context: Context?, inputTask: Task) {
             taskDate,
             pendingIntent
         )
-        Toast.makeText(context, "Has benn set up a new alarm", Toast.LENGTH_LONG).show()
     }
 
     fun cancelAlarm(task: Task) {

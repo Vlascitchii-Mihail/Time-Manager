@@ -12,7 +12,7 @@
     <string name="add_new_task">Add new task</string>
     <string name="write_a_description_here">Write a description here</string>
     <string name="write_a_task_name_here">Write a task name here</string>
-    <string name="add_task">Add a task</string>
+    <string name="add_task">Add the task</string>
     <string name="add_new_task_floating_action_button">Add a new task floating action button</string>
     <string name="set_start_date">Set start date</string>
     <string name="set_end_date">Set end date</string>
